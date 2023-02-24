@@ -1,0 +1,211 @@
+body{
+	margin: 0px;
+
+}
+/*Body header*/
+#body-header{
+ 
+   height: 65vh;
+  background-image: url(images/bg.jpg);
+  
+  background-size: cover;
+  background-position: centre;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+/*horizontal list*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 0px 8px;
+}
+.horizontal-list li a {
+	color: white;
+	text-decoration: none;
+	
+}
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+/*for text align to be center*/
+.text-center{
+	text-align: center;
+}
+/*name and social action*/
+#name-social-container{
+	margin-top: 10vh;
+	
+	
+}
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	}
+
+.social-icons li a {
+	padding: 20px;
+	font-size: 1rem;
+	border-radius: 50%;
+	border-color: red;
+}
+.social-icons li a:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230,196,166,0.6);
+	color: blue;
+}
+/* common css for all section */
+section{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction:column ;
+	/* it put all the div elements in section to centre  */
+	align-items: center;
+}
+/* put the background color for even section */
+section:nth-child(2n){
+	background-color: lightgray;
+}
+/* put the background color for odd section */
+section:nth-child(2n+1){
+	background-color: white;
+}
+section:target{
+	background-color: cyan;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	/* do not need to give the margin cuz align items put all items in centre */
+	margin: 10px auto;
+	font-weight: 400;
+}
+.section-heading span{
+	
+	font-size: 30px;
+	color: blue;
+	display: inline-block;
+	padding: 10px;
+	margin-right: 0.1rem;
+}
+
+/*about Section*/
+#about{
+	height: auto;
+	width: 100%;
+	/* background-color: black; */
+	position: relative;
+	
+}
+
+#my-image{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+}
+
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border: 2px solid white;
+	box-shadow: 10px 10px 5px pink;;
+	}
+#about p{
+	color: grey;
+	font-size: large;
+	font-weight: 1.5rem;
+	text-align: center;
+	
+}
+/* skill section */
+.skills-display{
+	width: 70%;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+	
+}
+.skill-progress{
+	width: 7rem;
+	height: 1.4rem;
+	background-color: lightgray;
+	border-radius: 0.8rem;
+	border: 2px solid black;
+}
+/* this rule will apply to all the div that is direct child to this class */
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span{
+	color: white;
+	font-size: 1rem;
+	margin-left: 10px;
+}
+/* timeline */
+.timeline{
+	position: relative;
+	
+	width: 75%;
+	
+	
+	border: 2px solid black;
+}
+.timeline-box{
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	border: 2px solid black;
+}
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+.timeline-divider{
+	position: absolute;
+	height: 75%;
+	width: 0;
+	border: 3px dashed palevioletred;
+	top: ;
+	
+}
+
+/* common-margin-classes */
+.mb75px{
+	margin-bottom:75px ;
+}
+/* common color classes */
+.text-highlight{
+	color: #2857a4;
+	font-weight: 600;
+}
+.mb-blue{
+	background-color: #2857a4;
+}
+/* percentage classes */
+.eighty-five-percent{
+	/* you can write 100% or inherit both are same */
+	/* height: 100%; */
+	height: inherit;
+	width: 85%;
+	
+
+}
